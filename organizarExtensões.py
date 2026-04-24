@@ -2,7 +2,6 @@ import os
 import shutil
 
 
-# Dica: use caminhos relativos ou variáveis de ambiente para o robô rodar em qualquer PC
 home = os.path.expanduser("~")
 downloadsPasta = os.path.join(home, "Downloads")
 
@@ -13,7 +12,7 @@ for arq in os.listdir(downloadsPasta):
     if os.path.isdir(caminho_origem):
         continue
 
-    ext = os.path.splitext(arq)[1].lower() # .lower() evita erro com .JPG vs .jpg
+    ext = os.path.splitext(arq)[1].lower() 
 
     # Define o destino baseado na extensão
     destino = None
@@ -24,9 +23,9 @@ for arq in os.listdir(downloadsPasta):
     elif ext in [".zip", ".rar", ".7z"]:
         destino = os.path.join(home, "Compactados")
 
-    # Se a extensão for uma das que mapeamos
+    # Se a extensão for uma das filtradas
     if destino:
-        # O PULO DO GATO: Se a pasta não existir, o robô cria na hora!
+        #Se a pasta não existir, o robô cria na hora!
         if not os.path.exists(destino):
             os.makedirs(destino)
         
