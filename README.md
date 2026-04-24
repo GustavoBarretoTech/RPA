@@ -13,7 +13,7 @@ As ferramentas inclusas aqui realizam:
 
 ## 🛠️ Tecnologias Comuns
 *   Python
-*   Bibliotecas sugeridas: `Selenium`, `PyAutoGUI`, `OS`, `BeautifulSoup`, `Shutil`
+*   Bibliotecas sugeridas: `Selenium`, `PyAutoGUI`, `OS`, `BeautifulSoup`, `Shutil`, `Pynput`, `Sys`
 
 ---
 *Projeto desenvolvido para estudos de automação e produtividade.*
