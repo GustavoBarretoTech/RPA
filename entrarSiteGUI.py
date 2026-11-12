@@ -32,7 +32,6 @@ class App(ctk.CTk):
     def abrir_site(self):
         site = self.entry.get()
         if site:
-            # Limpa o input como você fez no original
             site = site.replace("https://", "").replace(".com", "")
             
             if self.chrome_caminho:
